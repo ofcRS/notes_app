@@ -43,7 +43,7 @@ function App() {
     <div className="App">
       <Row gutter={[16, 16]}>
         <Col span={12}>
-          <NoteForm onSubmit={isEditing ? editExistingNote : addNewNote} onCancel={cancelEdit} initialData={initialData} />
+          <NoteForm onSubmit={addNewNote} onCancel={cancelEdit} initialData={initialData} />
         </Col>
         <Col span={12}>
           <FilterByCategory categories={categoryList} onChange={console.log} />
